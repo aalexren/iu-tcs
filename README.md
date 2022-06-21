@@ -1,5 +1,5 @@
 # Description
-Implement an FSA to RegExp Translator. Given an FSA description in the `input.txt` (see input file format) your program should output the output.txt containing an error description (see validation errors) or a regular expression that corresponds to the given FSA. The regular expression should be built according to a slightly modified version of the Kleene’s algorithm (see Kleene's algorithm).
+Implement an FSA to RegExp Translator. Given an FSA description in the `input.txt` (see input file format) your program should output the `output.txt` containing an error description (see validation errors) or a regular expression that corresponds to the given FSA. The regular expression should be built according to a slightly modified version of the Kleene’s algorithm (see Kleene's algorithm).
 
 ## Input file format
 states=[s1,s2,...]	// s1 , s2, ... ∈ latin letters, words and numbers  
