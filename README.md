@@ -21,7 +21,7 @@ E5: FSA is nondeterministic
 Denote ∅ as {}  
 Denote Ɛ as eps  
 Define update rule with the additional parentheses:  
-R<sup>k</sup><sub>ij</sub> = (R^k-1^~ik~)(R^k-1^~kk~)\*(R^k-1^~kj~)|(R^k-1^~ij~)  
+R<sup>k</sup><sub>ij</sub> = (R<sup>k-1</sup><sub>ik</sub>)(R<sup>k-1</sup><sub>kk</sub>)\*(R<sup>k-1</sup><sub>kj</sub>)|(R<sup>k-1</sup><sub>ij</sub>)  
 
 ### Example 1
 `input.txt`  
@@ -35,7 +35,7 @@ trans=[off>turn_on>off,on>turn_off>on]
 Error:  
 E2: Some states are disjoint  
 
-## Example 2
+### Example 2
 `input.txt`  
 states=[0,1]  
 alpha=[a,b]  
@@ -46,7 +46,7 @@ trans=[0>a>0,0>b>1,1>a>1,1>b>1]
 `output.txt`  
 ((a|eps)(a|eps)\*(b)|(b))(({})(a|eps)\*(b)|(a|b|eps))\*(({})(a|eps)\*(b)|(a|b|eps))|((a|eps)(a|eps)\*(b)|(b))
 
-## Example 3
+### Example 3
 `input.txt`  
 states=[on,off]  
 alpha=[turn_on,turn_off]  
